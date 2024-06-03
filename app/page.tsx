@@ -1,113 +1,200 @@
-import Image from "next/image";
+import React from 'react'
 
-export default function Home() {
+export default function page() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+   
+      <div className="website">
+        {/* this is navbar */}
+
+        <div className="navbar">
+          <div className="heading">
+            <img src="./assignment 6 pics/navbar+header/Mask Group.png" alt="img does not show" />
+            <h2>food waGon</h2>
+          </div>
+          <div className="deliver">
+            <p>deliver to:</p>
+            <img src="./assignment 6 pics/navbar+header/Icons.png" alt="img does not show" />
+            <p>Current Location <b>Mohammadpur Bus Stand, Dhaka</b></p>
+          </div>
+          <div className="searchbtn">
+            <div className="search">
+              <img src="./assignment 6 pics/navbar+header/Search.png" alt="img does not show" />
+              <p><b>Search Food</b></p>
+            </div>
+            <div className="button">
+              <img src="./assignment 6 pics/navbar+header/user.png" alt="img does not show" />
+              <button id="login">
+                login
+              </button>
+            </div>
+          </div>
         </div>
+
+        {/* <!-- navbar is completed --> */}
+
+
+
+        {/* <!-- this is header section --> */}
+
+        <div className="header">
+          <div className="titlecard">
+            <h1>Are you starving?</h1>
+            <p>within a few clicks, finds meals that are accessible near you</p>
+            <div className="ordercard">
+              <div className="buttons">
+                <div className="delivery">
+                  <img src="./assignment 6 pics/navbar+header/Icon.png" alt=" img does not show" />
+                  <p><b>Delivery</b></p>
+                </div>
+                <div className="pickup">
+                  <img src="./assignment 6 pics/navbar+header/Icon (1).png" alt="img does not show" />
+                  <p><b>pickup</b></p>
+                </div>
+              </div>
+              <hr />
+                <div className="enteraddress">
+                  <div className="inputaddress">
+                    <img src="./assignment 6 pics/navbar+header/Icons.png" alt="img does not show" />
+                    <input type="text" placeholder="enter your address" />
+                  </div>
+                  <div className="findfood">
+                    <img src="./assignment 6 pics/navbar+header/Search.png" alt="img does not show" />
+                    <button><b>Find Food</b></button>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <img id="img1" src="./assignment 6 pics/navbar+header/Image Base.png" alt="img does not show" />
+        </div>
+
+        {/* <!-- header is completed --> */}
+
+        {/*  flashdeals is started  */}
+
+        <div className="flashdeals">
+          <div className="greysvage15">
+            <img src="./assignment 6 pics/Flash Deals/Food Photo.png" alt="img does not show" />
+            <h6><b>Greys Vage</b></h6>
+            <p><b>6 Days Remaining</b></p>
+          </div>
+          <div className="greysvage10">
+            <img src="./assignment 6 pics/Flash Deals/Food Photo (2).png" alt="img does not show" />
+            <h6><b>Greys Vage</b></h6>
+            <p><b>6 Days Remaining</b></p>
+          </div>
+          <div className="greysvage25">
+            <img src="./assignment 6 pics/Flash Deals/Food Photo (3).png" alt="img does not show" />
+            <h6><b>Greys Vage</b></h6>
+            <p><b>6 Days Remaining</b></p>
+          </div>
+          <div className="greysvage20">
+            <img src="./assignment 6 pics/Flash Deals/Food Photo (4).png " alt="img does not show" />
+            <h6><b>Greys Vage</b></h6>
+            <p><b>6 Days Remaining</b></p>
+          </div>
+        </div>
+
+        {/* <!-- flashdeals is completed --> */}
+
+        {/* <!-- the how does it work is started  --> */}
+
+
+
+        <div className="work">
+          <h1 id="h1">How does it work</h1>
+          <div className="cards">
+            <div className="location">
+              <img src="./assignment 6 pics/how does it work/Icons.png" alt="img does not exist" />
+              <h3>Select location</h3>
+              <p>Choose the location where your food will be delivered.</p>
+            </div>
+            <div className="order">
+              <img src="./assignment 6 pics/how does it work/Icons (1).png" alt="img does not exist" />
+              <h3>Choose order</h3>
+              <p>Check over hundreds of menus to pick your favorite food</p>
+            </div>
+            <div className="pay">
+              <img src="./assignment 6 pics/how does it work/Icons (2).png" alt="img does not exist" />
+              <h3>Pay advanced</h3>
+              <p>It's quick, safe, and simple. Select several methods of payment</p>
+            </div>
+            <div className="meals">
+              <img src="./assignment 6 pics/how does it work/Icons (3).png" alt="img does not exist" />
+              <h3>Enjoy meals</h3>
+              <p>Food is made and delivered directly to your home.</p>
+            </div>
+          </div>
+        </div>
+
+        {/* <!-- the how does it work is completed  --> */}
+
+
+
+        {/* <!-- popular items is started --> */}
+
+        <div className="popular">
+          <h1 id="popularitems">popular items</h1>
+          <div className="cards2">
+            {/* <h1 id="leftbtn" > < </h1> */}
+            <div className="burger">
+              <img src="./assignment 6 pics/popular Items/Rectangle 336.png" alt="img does not exist" />
+              <h5> Cheese Burger</h5>
+              <div className="burgerA">
+                <i className="fa-solid fa-location-dot"></i>
+                <p>Burger Arena</p>
+              </div>
+              <h5><b>$3.88</b></h5>
+              <button><b>Order Now</b></button>
+            </div>
+            <div className="toffeecake">
+              <img src="./assignment 6 pics/popular Items/Rectangle 336 (1).png" alt="img does not exist" />
+              <h5> Toffe's Cake</h5>
+              <div className="topskick">
+                <i className="fa-solid fa-location-dot"></i>
+                <p>Top Sticks</p>
+              </div>
+              <h5>$4.00</h5>
+              <button>Order Now</button>
+            </div>
+            <div className="dancake">
+              <img src="./assignment 6 pics/popular Items/Rectangle 336 (2).png" alt="img does not exist" />
+              <h5> dancake</h5>
+              <div className="cakeworld">
+                <i className="fa-solid fa-location-dot"></i>
+                <p>Cake World</p>
+              </div>
+              <h5>$1.99</h5>
+              <button>Order Now</button>
+            </div>
+            <div className="sandwitch">
+              <img src="./assignment 6 pics/popular Items/Rectangle 336 (3).png" alt="img does not exist" />
+              <h5>Crispy Sandwitch</h5>
+              <div className="dine">
+                <i className="fa-solid fa-location-dot"></i>
+                <p> Fastfood Dine</p>
+              </div>
+              <h5>$3.00</h5>
+              <button>Order Now</button>
+            </div>
+            <div className="thaisoup">
+              <img src="./assignment 6 pics/popular Items/Rectangle 336 (4).png" alt="img does not exist" />
+              <h5> Thai Soup</h5>
+              <div className="foodyman">
+                <i className="fa-solid fa-location-dot"></i>
+                <p>Foody man</p>
+              </div>
+              <h5>$2.79</h5>
+              <button>Order Now</button>
+            </div>
+
+
+            {/* <h1 id="rightbtn" > > </h1> */}
+          </div>
+        </div>
+
+
+        {/* <!-- popular items is  completed --> */}
+
       </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  );
+  )
 }
